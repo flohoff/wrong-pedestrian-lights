@@ -1,0 +1,26 @@
+Source: wrong-pedestrian-lights
+Section: science
+Priority: optional
+Maintainer: Florian Lohoff <f@zz.de>
+Build-Depends:
+ cmake,
+ debhelper-compat (= 13),
+ libbz2-dev,
+ libexpat1-dev,
+ libosmium2-dev,
+ libprotozero-dev,
+ libspatialite-dev,
+ libsqlite3-dev,
+ pkgconf,
+ zlib1g-dev,
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: wrong-pedestrian-lights
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: find suspicious pedestrian signals in OSM data
+ Scans OSM PBF files for a traffic_signals node, a single
+ crossing=traffic_signals node and another traffic_signals node on the
+ same car road without junctions in between. Writes buffered bounding
+ boxes as GeoJSON or SpatiaLite.

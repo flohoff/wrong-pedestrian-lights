@@ -1,0 +1,12 @@
+wrong-pedestrian-lights (2) trixie; urgency=medium
+
+  * Find signal/crossing/signal triples on car roads
+  * Add SpatiaLite output with configurable table and geometry column
+
+ -- Florian Lohoff <f@zz.de>  Thu, 05 Nov 2026 21:31:25 +0100
+
+wrong-pedestrian-lights (1) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Florian Lohoff <f@zz.de>  Thu, 05 Nov 2026 21:30:36 +0100

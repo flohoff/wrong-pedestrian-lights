@@ -1,1 +1,11 @@
 build/
+debian/.debhelper/
+debian/*.debhelper*
+debian/*.substvars
+debian/files
+debian/wrong-pedestrian-lights/
+obj-*/
+*.geojson
+*.json
+*.pbf
+*.sqlite
